@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: purple-mermaid-app3-devfile-sample-ryok-sample
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:abhindas-tenant-purple-mermaid-app3-devfile-sample-ryok-sample
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0de5fd10ddc28776662eb259c01a9cea82e634a023c4d930a439c11afd0c3bd4
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
