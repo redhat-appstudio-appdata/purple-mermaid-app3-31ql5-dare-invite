@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: purple-mermaid-app3-devfile-sample-ryok-sample
+  namespace: abhindas-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0de5fd10ddc28776662eb259c01a9cea82e634a023c4d930a439c11afd0c3bd4
+        name: container-image
+        resources: {}
+status: {}
