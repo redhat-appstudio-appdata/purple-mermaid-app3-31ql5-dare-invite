@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-buxn
+  namespace: abhindas-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9720465c8a7f83e0a76df78381fe4b6e474ded9b018bbaac4ceb5ce10889fce2
+        name: container-image
+        resources: {}
+status: {}
