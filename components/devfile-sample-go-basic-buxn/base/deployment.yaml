@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-buxn
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:abhindas-tenant-devfile-sample-go-basic-buxn
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9720465c8a7f83e0a76df78381fe4b6e474ded9b018bbaac4ceb5ce10889fce2
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -40,6 +40,9 @@ spec:
           tcpSocket:
             port: 8081
         resources:
+          limits:
+            cpu: "1"
+            memory: 512Mi
           requests:
             cpu: 10m
             memory: 10Mi
